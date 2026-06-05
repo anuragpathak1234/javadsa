@@ -19,5 +19,7 @@ public class Occuranceofnum {
 
         System.out.println(occurance);
 
+
+
     }
 }
