@@ -16,8 +16,8 @@ public class LearningRtn {
         System.out.print("Enter num2 : ");
         int num2 = input.nextInt();
 
-        int sum = num1 + num2;
-        return sum;
+        int sum1 = num1 + num2;
+        return sum1;
 
     }
 }
