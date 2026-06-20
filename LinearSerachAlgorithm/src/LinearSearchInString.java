@@ -1,7 +1,10 @@
+import java.util.Arrays;
 public class LinearSearchInString {
     public static void main(String[] args){
         String name = "chhotu";
         char target = 'u';
+
+        System.out.println(Arrays.toString(name.toCharArray()));
 
         boolean ans = search(name,target);
         System.out.println(ans);
