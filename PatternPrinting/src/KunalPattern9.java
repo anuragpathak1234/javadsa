@@ -1,0 +1,2 @@
+public class KunalPattern9 {
+}
