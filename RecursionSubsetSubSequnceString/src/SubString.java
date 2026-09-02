@@ -25,7 +25,7 @@ public class SubString {
 //        subsequence(p,up.substring(1));
 //
 //    }
-DA
+
 
 
     static ArrayList<String> subsequence(String p, String up){
