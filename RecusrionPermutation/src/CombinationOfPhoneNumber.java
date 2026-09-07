@@ -1,20 +1,27 @@
+import java.util.ArrayList;
+
 public class CombinationOfPhoneNumber {
 
     public static void main(String[] args){
 
-        combinationOfPhoneNumber("","12");
+        ArrayList<String> ans =combinationOfPhoneNumber("","12");
+        System.out.println(ans);
 
 
     }
 
 
-    static void combinationOfPhoneNumber(String p, String up){
+    static ArrayList<String> combinationOfPhoneNumber(String p, String up){
 
         if(up.isEmpty()){
-            System.out.println(p);
 
-            return;
+            ArrayList<String>list = new ArrayList<>();
+            list.add(p);
+            return list;
+
         }
+
+        ArrayList<String> ans = new ArrayList<>();
 
         int digit = up.charAt(0) - '0';
 
@@ -22,8 +29,12 @@ public class CombinationOfPhoneNumber {
 
             char ch = (char)('a' + i);
 
-            combinationOfPhoneNumber(p + ch, up.substring(1));
+         ArrayList<String> buttom =   combinationOfPhoneNumber(p + ch, up.substring(1));
+
+         ans.addAll(buttom);
         }
+
+        return ans;
 
 
 
