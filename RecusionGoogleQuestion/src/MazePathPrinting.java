@@ -41,6 +41,10 @@ public class MazePathPrinting {
 
         ArrayList<String> ans = new ArrayList<>();
 
+
+
+
+
         if(r > 1){
            ans.addAll(pathArraylist(p  + 'D',r-1,c));
         }
