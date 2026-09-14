@@ -23,13 +23,13 @@ public class PatternNo7 {
             }
 
             // Decreasing column
-
+//
             for(int cols = rows; cols >= 1; cols--){
                 System.out.print(cols + " ");
             }
 
             //Increasing Column
-            for(int cols = 2; cols <= rows; cols++){
+            for(int cols = 1; cols <= rows; cols++){
                 System.out.print(cols + " ");
             }
 
