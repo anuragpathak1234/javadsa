@@ -1,3 +1,8 @@
+
+
+package com.chhotu.packages;
+
+
 public class Constructor {
 
     public static void main(String[] args){
@@ -20,6 +25,13 @@ public class Constructor {
 
         Student1 random2 = new Student1();
         System.out.println(random2.name);
+
+        Student1 one = new Student1();
+        Student1 two = one;
+
+        one.name = "something";
+
+        System.out.println(two.name);
 
     }
 
